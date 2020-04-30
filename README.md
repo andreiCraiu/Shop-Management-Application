@@ -1,1 +1,1 @@
-# Shop-Management-Application
+# shopManagement
