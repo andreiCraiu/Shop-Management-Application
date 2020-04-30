@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddTransactionController">
+   <children>
+      <ImageView fitHeight="421.0" fitWidth="751.0" layoutY="37.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resurces/icons/Untitled-Project.jpg" />
+         </image>
+      </ImageView>
+
+      <TextField fx:id="txtTransactionID" layoutX="63.0" layoutY="138.0" prefHeight="25.0" prefWidth="125.0" promptText="Transaction ID" />
+      <TextField fx:id="txtQuantity" layoutX="63.0" layoutY="197.0" prefHeight="25.0" prefWidth="125.0" promptText="Number of Items" />
+
+      <TableView fx:id="productTableView" layoutX="446.0" layoutY="66.0" prefHeight="370.0" prefWidth="291.0">
+
+        <columns>
+          <TableColumn fx:id="productID" prefWidth="104.0" text="ProductID">
+             <cellValueFactory>
+                <PropertyValueFactory property="productId" />
+             </cellValueFactory>
+          </TableColumn>
+
+          <TableColumn prefWidth="86.0" text="Quantity">
+             <cellValueFactory>
+                <PropertyValueFactory property="quantity" />
+             </cellValueFactory>
+          </TableColumn>
+
+                  <TableColumn prefWidth="100.0" text="Card Number">
+               <cellValueFactory>
+                  <PropertyValueFactory property="cardNumber" />
+               </cellValueFactory>
+            </TableColumn>
+        </columns>
+
+      </TableView>
+      <TextField fx:id="searchTransaction" layoutX="446.0" layoutY="12.0" prefHeight="25.0" prefWidth="291.0" promptText="Search Transaction" />
+      <ImageView fitHeight="22.0" fitWidth="21.0" layoutX="713.0" layoutY="12.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resurces/icons/kindpng_750281.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="125.0" layoutY="12.0" text="Add New Transaction">
+         <font>
+            <Font name="Sitka Small Bold Italic" size="18.0" />
+         </font>
+      </Label>
+
+      <Button fx:id="addTransactionBtn" layoutX="261.0" layoutY="371.0" mnemonicParsing="false" onAction="#addTransaction" prefHeight="25.0" prefWidth="69.0" text="Add" />
+      <Button fx:id="backProductBtn" layoutX="63.0" layoutY="371.0" mnemonicParsing="false" onAction="#backProductMenu" text="Back" />
+      <TextField fx:id="txtClientCard" layoutX="63.0" layoutY="251.0" prefHeight="25.0" prefWidth="125.0" promptText="Cient Card Number" />
+      <TextField fx:id="txtProductID" layoutX="271.0" layoutY="83.0" prefHeight="25.0" prefWidth="118.0" promptText="Product ID" />
+   </children>
+</AnchorPane>

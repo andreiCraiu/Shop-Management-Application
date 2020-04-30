@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PercentOperationController">
+   <children>
+      <ImageView fitHeight="470.0" fitWidth="572.0" layoutX="280.0" layoutY="-13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resurces/icons/hiclipart.com%20(2).png" />
+         </image>
+      </ImageView>
+      <Button layoutX="40.0" layoutY="386.0" mnemonicParsing="false" onAction="#percentOperationBackBtn" text="Back" />
+      <Button layoutX="298.0" layoutY="386.0" mnemonicParsing="false" onAction="#ApplyPercentOperationBtn" text="Apply" />
+      <ComboBox fx:id="operationComboBox" layoutX="41.0" layoutY="115.0" prefHeight="25.0" prefWidth="149.0" promptText="Increase/ Decrease">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Increase" />
+               <String fx:value="Decrease" />
+            </FXCollections>
+         </items>
+      </ComboBox>
+      <Spinner fx:id="spinnerOperationValue" amountToStepBy="0.10" editable="true" initialValue="0" layoutX="41.0" layoutY="260.0" max="999999999999" min="0" />
+      <Spinner fx:id="spinnerOperationPercent" amountToStepBy="0.10" editable="true" initialValue="0" layoutX="40.0" layoutY="326.0" max="100" min="0" />
+      <Label layoutX="41.0" layoutY="185.0" prefHeight="18.0" prefWidth="149.0" text="all prices with a value">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="82.0" layoutY="221.0" text="lower than">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="94.0" layoutY="308.0" text="with %">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="51.0" text="Edit Price">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

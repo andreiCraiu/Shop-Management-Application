@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="736.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditProductController">
+   <children>
+      <ImageView fitHeight="420.0" fitWidth="739.0" layoutX="-3.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resurces/icons/Untitled-Project%20(3).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="127.0" layoutY="14.0" prefHeight="20.0" prefWidth="132.0" text="Update Product">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtProductID" layoutX="382.0" layoutY="64.0" prefHeight="25.0" prefWidth="140.0" promptText="Product ID" />
+      <TextField fx:id="txtProductName" layoutX="90.0" layoutY="127.0" promptText="New Product Name" />
+      <TextField fx:id="txtProductPrice" layoutX="90.0" layoutY="182.0" promptText="New Product Price" />
+      <TextField fx:id="txtProductManufacturer" layoutX="90.0" layoutY="239.0" promptText="New Product Manufacturer" />
+      <TextField fx:id="txtQuantity" layoutX="90.0" layoutY="286.0" promptText="New Product Quantity" />
+      <Button layoutX="90.0" layoutY="384.0" mnemonicParsing="false" onAction="#backEdit" prefHeight="25.0" prefWidth="52.0" text="Back" />
+      <Button layoutX="356.0" layoutY="397.0" mnemonicParsing="false" onAction="#editProduct" prefHeight="25.0" prefWidth="52.0" text="Edit" />
+   </children>
+</AnchorPane>

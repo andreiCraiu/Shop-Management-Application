@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<AnchorPane prefHeight="460.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TransactionMenuController">
+   <children>
+      <TableView fx:id="transactionsTableView" layoutX="24.0" layoutY="61.0" prefHeight="367.0" prefWidth="719.0">
+        <columns>
+          <TableColumn prefWidth="93.0" text="ID">
+              <cellValueFactory>
+                  <PropertyValueFactory property="id"/>
+              </cellValueFactory>
+          </TableColumn>
+
+          <TableColumn prefWidth="111.0" text="Product ID" >
+              <cellValueFactory>
+                  <PropertyValueFactory property="productId"/>
+              </cellValueFactory>
+          </TableColumn>
+
+            <TableColumn prefWidth="109.0" text="Date " >
+                <cellValueFactory>
+                    <PropertyValueFactory property="date"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="121.0" text="Time" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="time"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="143.0" text="Quantity " >
+                <cellValueFactory>
+                    <PropertyValueFactory property="quantity"/>
+                </cellValueFactory>
+            </TableColumn>
+
+            <TableColumn prefWidth="141.0" text="Card Number" >
+                <cellValueFactory>
+                    <PropertyValueFactory property="cardNumber"/>
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+      </TableView>
+      <Label layoutX="45.0" layoutY="26.0" text="My Transations">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtSearchTransaction" layoutX="545.0" layoutY="24.0" prefHeight="25.0" prefWidth="193.0" />
+      <Button layoutX="218.0" layoutY="24.0" mnemonicParsing="false" onAction="#deleteTransactionBtn" text="Delete" />
+      <Button layoutX="329.0" layoutY="24.0" mnemonicParsing="false" onAction="#editTransactionBtn" prefHeight="25.0" prefWidth="51.0" text="Edit" />
+      <Button layoutX="24.0" layoutY="428.0" mnemonicParsing="false" text="Back" onAction="#backTransactionShowMenu"/>
+   </children>
+</AnchorPane>

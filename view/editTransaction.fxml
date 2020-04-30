@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="460.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditTransactionController">
+   <children>
+      <ImageView fitHeight="448.0" fitWidth="759.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resurces/icons/Untitled-Project%20(3).jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="74.0" layoutY="4.0" text="Update Transaction">
+         <font>
+            <Font name="Times New Roman Bold Italic" size="18.0" />
+         </font>
+      </Label>
+      <Button layoutX="39.0" layoutY="363.0" mnemonicParsing="false" onAction="#backUpdateTransactionBtn" text="Back" />
+      <Button layoutX="296.0" layoutY="370.0" mnemonicParsing="false" onAction="#editTransactionBtn" prefHeight="25.0" prefWidth="58.0" text="Edit" />
+      <TextField fx:id="txtTransactionId" layoutX="354.0" layoutY="57.0" promptText="Transaction ID" />
+      <TextField fx:id="txtProductID" layoutX="39.0" layoutY="115.0" promptText="Product ID" />
+      <TextField fx:id="txtTransactionQuantity" layoutX="39.0" layoutY="173.0" promptText="Quantity" />
+      <TextField fx:id="txtTransactionCardNumber" layoutX="39.0" layoutY="230.0" promptText="Client Card Number" />
+   </children>
+</AnchorPane>
